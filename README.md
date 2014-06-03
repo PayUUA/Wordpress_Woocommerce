@@ -10,7 +10,7 @@
 
 #Установка
 -------------
-1. Скопировать папку payu в папку {Корень сайта}/wp-content/plugins/woocommerce/classes/gateways/
+1. Скопировать папку payu в папку {Корень сайта}/wp-content/plugins/woocommerce/includes/gateways
 2. Открыть в редакторе файл {Корень сайта}/wp-content/plugins/woocommerce/woocommerce.php
 2.1 Найти кусок кода с подобным содержанием :
 		`function core_gateways( $methods ) { $methods[] = 'WC_Gateway_BACS'; .... `
