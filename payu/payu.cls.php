@@ -138,7 +138,7 @@ class PayU
 	private function makeString ( $name, $val )
 	{
 		$str = "";
-		if ( !is_array( $val ) ) return '<input type="'.$this->showinputs.'" name="'.$name.'" value="'.htmlspecialchars($val).'">';
+		if ( !is_array( $val ) ) return '<input type="'.$this->showinputs.'" name="'.$name.'" value="'.htmlspecialchars($val).'"/>';
 		foreach ($val as $v) $str .= $this->makeString( $name.'[]', $v );
 		return $str;
 	}
