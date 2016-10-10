@@ -64,6 +64,11 @@ class PayU
 	{		
 		$str = "";
 		foreach ( $data as $v ) $str .= $this->convData( $v );
+
+		if ($this->debug == 1) {
+			$str .= "4TRUE";
+		}
+
 		return hash_hmac("md5",$str, self::$key);
 	}
 
